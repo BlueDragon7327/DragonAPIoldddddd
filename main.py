@@ -22,7 +22,7 @@ def chat_with_ai():
         history.append({"role": "user", "content": prompt})
 
         # Initialize the Groq client with your API key
-        client = Groq(api_key="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")
+        client = Groq(api_key=GROQ_API_KEY)
 
         # Send the chat request to the Groq API
         chat_completion = client.chat.completions.create(
